@@ -53,7 +53,7 @@ body {
   letter-spacing: 3px;
 }
 
-.header__link:hover {
+.header__link:hover, .header__link :focus {
   text-decoration: underline;
 }
 
@@ -67,9 +67,9 @@ body {
 
 .header__button {
   font-size: 14px;
-  border-radius: 40px;
   background-color: transparent;
   border: 2px solid #66C05D;
+  border-radius: 40px;
   padding: 12px 27px;
   margin-left: 29px;
   transition: 0.3s ease;
@@ -124,7 +124,6 @@ body {
 .nav__header a {
   text-decoration: none;
   color: #000000;
-  transition: 0.4s ease;
 }
 
 .sale {
@@ -310,11 +309,6 @@ body {
   height: 140px;
 }
 
-.test__img {
-  text-align: center;
-  font-size: 15px;
-}
-
 .footer__top {
   background-color: #fff;
   padding: 15px 0;
@@ -329,13 +323,12 @@ body {
 
 .footer__container-button {
   font-size: 14px;
-  border-radius: 40px;
   background-color: transparent;
   border: 2px solid #66C05D;
+  border-radius: 40px;
   padding: 12px 27px;
   margin-left: 29px;
   transition: 0.3s ease;
-  outline: none;
 }
 
 .footer__container-button:hover {
