@@ -113,17 +113,23 @@ body {
 .nav__header li {
   margin-left: 20px;
   margin-right: 20px;
+  transition: 0.3s;
 }
 
 .nav__header li:hover, .nav__header li :active, .nav__header li :focus {
-  border-bottom: 2px solid #66C05D;
   font-weight: 700;
-  font-size: 18px;
+  transform: scale(1.2);
 }
 
 .nav__header a {
   text-decoration: none;
   color: #000000;
+}
+
+.nav__header a:hover {
+  text-decoration: underline 3px;
+  text-decoration-color: #66C05D;
+  text-decoration-skip-ink: none;
 }
 
 .sale {
