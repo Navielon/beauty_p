@@ -66,6 +66,7 @@ background-color: $gray;
             font-size: 16px;
             // Ширина шрифта
             font-weight: 700;
+            
         }
     }
 }
@@ -195,14 +196,16 @@ background-color: $gray;
         margin-left: 20px;
         // Внешний отступ справа
         margin-right: 20px;
+        // Плавность анимации
+        transition: 0.3s;
         // Эффект при наведении, активации, фокусе
         &:hover,:active,:focus{
-            // Нижнее подчёркивание
-            border-bottom: 2px solid $color;
             // Ширина текста   
             font-weight: 700;
-            // Размер шрифта
-            font-size: 18px;
+            // Увеличиваем элемент
+            transform: scale(1.2);
+            
+            
         }
     }
     // Обращаемся к ссылкам внутри списка
@@ -211,7 +214,15 @@ background-color: $gray;
         text-decoration: none;
         // Цвет текста ссылки
         color: $dark;
-        
+        // Анимация при наведении
+        &:hover{
+            // Нижнее подчёркивание
+            text-decoration: underline 3px;
+            // Меняем цвет подчёркивания
+            text-decoration-color: $color;
+            //! Святое свойство, которое убирает кривизну подчёркивания от гугла
+            text-decoration-skip-ink: none;
+        }
     }
 }
 //========================================================================================================================================================
